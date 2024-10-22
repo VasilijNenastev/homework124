@@ -24,13 +24,13 @@ public class Main {
         }
 
         int personAge = 24;
-        if (personAge <= 6) {
+        if (personAge >= 2 && personAge <= 6) {
             System.out.println("Если возраст человека равен " + personAge + " , то ему нужно ходить в детский сад");
         }
-        if (personAge > 6 && personAge <= 17) {
+        if (personAge >= 7 && personAge <= 17) {
             System.out.println("Если возраст человека равен " + personAge + " , то ему нужно ходить в школу");
         }
-        if (personAge > 17 && personAge <= 24) {
+        if (personAge >= 18 && personAge <= 24) {
             System.out.println("Если возраст человека равен " + personAge + " , то ему нужно ходить в университет");
         }
         if (personAge > 24) {
@@ -48,11 +48,11 @@ public class Main {
 
         int carriageCapacity = 102;
         int seatsInTheCarriage = 60;
-        int numberOfPassengers = 100;
+        int numberOfPassengers = 102;
         if (numberOfPassengers < seatsInTheCarriage) {
             System.out.println("В вагоне есть сидячие места");
         }
-        if (numberOfPassengers > seatsInTheCarriage && numberOfPassengers <= carriageCapacity) {
+        if (numberOfPassengers > seatsInTheCarriage && numberOfPassengers < carriageCapacity) {
             System.out.println(" В вагоне есть стоячие места");
         } else {
             System.out.println("В вагоне нет мест");
